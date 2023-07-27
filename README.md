@@ -6,7 +6,7 @@ Use this module to debug your import times or to check how long a process takes.
 
 ```python
 
-from importTime import startImport , endImport
+from importTime.importTime import startImport , endImport
 startImport()
 import numpy as np
 endImport("numpy")
