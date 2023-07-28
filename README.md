@@ -8,7 +8,7 @@ Use this module to debug your import times or to check how long a process takes.
 ### Debug Import Times
 This will print out the time it takes to import each module, but will not import them globally to your application. Please just use this function to debug times.
 ```python
-from importTime.importTime import debugImportTimes
+from importTime import debugImportTimes
 
 debugImportTimes(["numpy", "torch", "mediapipe", "PIL"], "MainDeps")
 ```
@@ -23,7 +23,7 @@ Can be added to your currently running application. This will print out the time
 ```python
 ```python
 
-from importTime.importTime import startImport , endImport, startTotal, endTotal, saveCSV
+from importTime import startImport , endImport, startTotal, endTotal, saveCSV
 
 
 startTotal()
